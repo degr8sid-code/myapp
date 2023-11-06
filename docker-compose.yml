@@ -1,0 +1,11 @@
+verision: '3.9'
+services:
+  app:
+    container_name: myapp
+    build: .
+    restart: always
+    volumes:
+     - .:/app
+     -  /app/node-modules
+    ports:
+     - 3000:3000
